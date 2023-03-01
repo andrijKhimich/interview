@@ -15,7 +15,7 @@ html {
 body {
   margin: 0; // Remove the margin in all browsers.
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "SF-pro", sans-serif;
   color: $black;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
@@ -26,7 +26,6 @@ body {
   -webkit-text-size-adjust: 100%;
   backface-visibility: hidden;
   text-rendering: geometricPrecision;
-  background-color: pink;
 }
 
 // custom scrollbar

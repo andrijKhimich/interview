@@ -15,13 +15,14 @@ const path = {
     css: `${devFolder}/scss/style.scss`,
     js: `${devFolder}/js/script.js`,
     img: `${devFolder}/img/**/*.{jpg,png,svg,gif,ico,webp}`,
-    fonts: `${devFolder}/fonts/*.ttf`,
+    fonts: `${devFolder}/fonts/*.{woff, woff2}`,
   },
   watch: {
     html: `${devFolder}/**/*.html`,
     css: `${devFolder}/scss/**/*.scss`,
     js: `${devFolder}/js/**/*.js`,
     img: `${devFolder}/img/**/*.{jpg,png,svg,gif,ico,webp}`,
+    fonts: `${devFolder}/fonts/*.{woff, woff2}`
   },
   clean: `./${deployFolder}/`
 }
@@ -250,6 +251,8 @@ const watchFiles = () => {
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.js], js);
   gulp.watch([path.watch.img], img);
+  gulp.watch([path.watch.fonts], fonts);
+
 }
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, img, svgSprite, fonts));
