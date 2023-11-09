@@ -25,8 +25,7 @@
     position: absolute;
     left: 0;
     border-radius: 3px;
-
-    &:first-child {
+    c8d3f5 &:first-child {
       top: 0;
     }
 
@@ -91,18 +90,17 @@
     &__link {
       padding: 16px 0 20px;
       font-size: 72px;
-      line-height: .7em;
+      line-height: 0.7em;
       font-weight: 500;
       position: relative;
 
       &::before {
-        content: "("counter(my-awesome-counter) ")";
+        content: '(' counter(my-awesome-counter) ')';
         position: absolute;
         top: 16px;
         left: -33px;
         font-size: 16px;
         line-height: 1.188em;
-
       }
     }
   }

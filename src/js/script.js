@@ -1,27 +1,27 @@
-// const toggleMenu = () => {
-//   const burger = document.querySelector(".js-burger");
-//   const menu = document.querySelector(".js-header-nav");
-//   const body = document.querySelector("body");
-//   burger.addEventListener("click", () => {
-//     if (!menu.classList.contains("active")) {
-//       menu.classList.add("active");
-//       burger.classList.add("active");
-//       body.classList.add("locked");
-//     } else {
-//       menu.classList.remove("active");
-//       burger.classList.remove("active");
-//       body.classList.remove("locked");
-//     }
-//   });
-//   window.addEventListener("resize", () => {
-//     if (window.innerWidth > 992) {
-//       menu.classList.remove("active");
-//       burger.classList.remove("active");
-//       body.classList.remove("locked");
-//     }
-//   })
-// }
-// toggleMenu();
+const toggleMenu = () => {
+  const burger = document.querySelector('.js-burger')
+  const menu = document.querySelector('.js-header-nav')
+  const body = document.querySelector('body')
+  burger.addEventListener('click', () => {
+    if (!menu.classList.contains('active')) {
+      menu.classList.add('active')
+      burger.classList.add('active')
+      body.classList.add('locked')
+    } else {
+      menu.classList.remove('active')
+      burger.classList.remove('active')
+      body.classList.remove('locked')
+    }
+  })
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 992) {
+      menu.classList.remove('active')
+      burger.classList.remove('active')
+      body.classList.remove('locked')
+    }
+  })
+}
+toggleMenu()
 
 // const fixedHeader = () => {
 //   const header = document.querySelector(".header");
@@ -34,7 +34,6 @@
 // }
 
 // window.addEventListener("scroll", fixedHeader);
-
 
 // check if browser support webp format for images
 // const testWebP = (callback) => {
@@ -54,5 +53,5 @@
 //   }
 // });
 
-// run for sprite svg support 
-svg4everybody();
+// run for sprite svg support
+svg4everybody()
