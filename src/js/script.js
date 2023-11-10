@@ -33,25 +33,25 @@ toggleMenu()
 //   }
 // }
 
-// window.addEventListener("scroll", fixedHeader);
+window.addEventListener('scroll', fixedHeader)
 
 // check if browser support webp format for images
-// const testWebP = (callback) => {
-//   let webP = new Image();
-//   webP.onload = webP.onerror = function () {
-//     callback(webP.height === 2);
-//   };
-//   webP.src =
-//     "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-// }
+const testWebP = (callback) => {
+  let webP = new Image()
+  webP.onload = webP.onerror = function () {
+    callback(webP.height === 2)
+  }
+  webP.src =
+    'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA'
+}
 
-// testWebP((support) => {
-//   if (support === true) {
-//     document.querySelector("body").classList.add("webp");
-//   } else {
-//     document.querySelector("body").classList.add("no-webp");
-//   }
-// });
+testWebP((support) => {
+  if (support === true) {
+    document.querySelector('body').classList.add('webp')
+  } else {
+    document.querySelector('body').classList.add('no-webp')
+  }
+})
 
 // run for sprite svg support
 svg4everybody()
